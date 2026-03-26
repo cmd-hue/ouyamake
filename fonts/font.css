@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Effra-Bold';
+  src: url('Effra-Bold.eot'); /* IE9 Compat Modes */
+  src: url('Effra-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Effra-Bold.woff') format('woff'), /* Modern Browsers */
+       url('Effra-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Effra-Bold.svg#4d3c8ad532dc39620c1a7258388fab6d') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'Effra-Light';
+  src: url('Effra-Light.eot'); /* IE9 Compat Modes */
+  src: url('Effra-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Effra-Light.woff') format('woff'), /* Modern Browsers */
+       url('Effra-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Effra-Light.svg#4452e5252cc0e131876410a0982da7a8') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  200;
+}
+
+@font-face {
+  font-family: 'Effra';
+  src: url('Effra_Std_Rg.eot'); /* IE9 Compat Modes */
+  src: url('Effra_Std_Rg.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Effra_Std_Rg.woff') format('woff'), /* Modern Browsers */
+       url('Effra_Std_Rg.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Effra_Std_Rg.svg#9415985da0ffc35466232532a260e2fc') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Futura-Bold';
+  src: url('FuturaStd-Bold.eot'); /* IE9 Compat Modes */
+  src: url('FuturaStd-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('FuturaStd-Bold.woff') format('woff'), /* Modern Browsers */
+       url('FuturaStd-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('FuturaStd-Bold.svg#e6614ac1ffeb97962de474601fd3ce1d') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'Futura-Heavy';
+  src: url('FuturaStd-Heavy.eot'); /* IE9 Compat Modes */
+  src: url('FuturaStd-Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('FuturaStd-Heavy.woff') format('woff'), /* Modern Browsers */
+       url('FuturaStd-Heavy.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('FuturaStd-Heavy.svg#f957ac4f7c9e44228c64976e40b8d5f5') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
