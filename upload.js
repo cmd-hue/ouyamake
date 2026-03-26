@@ -8,8 +8,8 @@ var completeScreen;
 var error;
 var errorScreen;
 var bigerror;
-var internalSpace = {{internalSpace}};
-var externalSpace = {{externalSpace}};
+var internalSpace = "internalSpace";
+var externalSpace = "externalSpace";
 
 function endsWith(str, suffix) {
     return str.indexOf(suffix, str.length - suffix.length) !== -1;
