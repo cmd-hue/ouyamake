@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Upload APK</title>
+
+		<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	    <link rel="stylesheet" href="style.css">
+
+	    <script src="jquery.min.js"></script>
+	    <script src="upload.js"></script>
+	</head>
+	<body>
+		<div id="background"></div>
+	    <span id="title">Upload APK</span>
+	    <div id="logo"></div>
+
+	    <div id="content">
+		    <div id="manual" class="box" style="display: none">
+			    <form method="post" action="/upload" enctype="multipart/form-data">
+			        <span>Select APK:</span>
+			        <input type="file" name="apk"/>
+			        <br/>
+			        <input type="submit" value="Upload!"/>
+			    </form>
+		    </div>
+		    <div id="dragndrop" class="box" style="display: none">
+		    	<span>Drag and drop your APK here!</span>
+		    	<span id="error" style="display: none"></span>
+		    	<div id="dropzone"></div>
+		    </div>
+		    <div id="progress" class="box" style="display: none">
+		    	<span>Uploading...</span>
+		    	<br/>
+		    	<div id="progressbarbg">
+		    		<div id="progressbar"></div>
+                    <div id="progressbartext"></div>
+	    		</div>
+		    </div>
+            <div id="errorScreen" class="box" style="display: none">
+                <p>Upload interrupted.</p>
+                <p>Return to the OUYA to try again.</p>
+            </div>
+		    <div id="complete" class="box" style="display: none">
+                <p>Upload complete!</p>
+                <p>Return to your console to finish installing!</p>
+		    </div>
+		    <noscript>
+		    	<div id="manual" class="box">
+			    	<form method="post" action="/upload" enctype="multipart/form-data">
+				        <span>Select APK:</span>
+				        <input type="file" name="apk"/>
+				        <br/>
+				        <input type="submit" value="Upload!"/>
+				    </form>
+		    	</div>
+		    </noscript>
+	    </div>
+        <div id="bigerror" style="display: none">
+            <div class="box">
+                <p></p>
+                <div class="center">
+                    <div id="close">OK</div>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>

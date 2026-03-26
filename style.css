@@ -1,0 +1,233 @@
+@import('/fonts/font.css');
+
+body {
+	font-family: 'Effra', sans-serif;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	font-size: 14pt;
+	background-color: black;
+}
+
+p, span {
+	cursor: default;
+}
+
+#background {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url(bg.jpg);
+}
+
+#title {
+	position: absolute;
+	top: 64px;
+	left: 75px;
+	text-transform: uppercase;
+	font-family: 'Effra', sans-serif;
+	font-weight: bold;
+	font-size: 50pt;
+	color: rgba(255, 255, 255, 0.35);
+	cursor: default;
+}
+
+#logo {
+	position: absolute;
+	top: 90px;
+	right: 75px;
+	background-image: url(ouya_logo.png);
+	width: 162px;
+	height: 40px;
+	background-size: 100% 100%;
+}
+
+#content {
+	display: block;
+	position: absolute;
+	text-align: center;
+	top: 200px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.box {
+	display: inline-block;
+	vertical-align: middle;
+	width: 500px;
+	height: 300px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	position: relative;
+}
+
+.hidden {
+	display: none;
+}
+
+#dragndrop {
+	border-radius: 20px;
+}
+
+#dragndrop span {
+	line-height: 280px;
+	font-size: 18pt;
+	position: absolute;
+	left: 0;
+	right: 0;
+	cursor: default;
+}
+
+#dragndrop span.hover {
+	color: #ff2a00;
+}
+
+#error {
+	color: #ff2a00;
+	font-weight: bold;
+	font-size: 14pt;
+	position: relative;
+	top: 50px;
+}
+
+#dropzone {
+	position: relative;
+	z-index: 1000;
+	border: 10px dashed white;
+	color: white;
+	border-radius: 20px;
+	height: 280px;
+}
+
+#dropzone.hover {
+	border-color: #ff2a00;
+}
+
+#progress span {
+	margin-top: 100px;
+	display: inline-block;
+	font-size: 20pt;
+}
+
+#progressbarbg {
+	width: 400px;
+	height: 25px;
+	background-color: rgba(255, 255, 255, 0.2);
+	text-align: left;
+	display: inline-block;
+	margin-top: 20px;
+	position: relative;
+}
+
+#progressbartext {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+}
+
+#progressbar {
+	width: 0;
+	height: 25px;
+	background-color: #ff2a00;
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+
+#progressbar.indefinite {
+	background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+	background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+	background-size: 40px 40px;
+	-webkit-animation: progress-bar-stripes 2s linear infinite;
+	animation: progress-bar-stripes 2s linear infinite;
+}
+
+#complete,#manual,#errorScreen {
+	font-size: 20pt;
+}
+
+#complete p:first-child {
+	margin-top: 75px;
+}
+
+#manual span {
+	display: inline-block;
+	margin-top: 100px;
+}
+
+#manual input {
+	max-width: 250px;
+	font-size: 14pt;
+}
+
+#manual input[type=submit] {
+	margin-top: 30px;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@-o-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+#bigerror {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    padding-top: 200px;
+    text-align: center;
+}
+
+#bigerror .box {
+    width: 600px;
+    height: 275px;
+    background: black;
+    padding: 20px;
+    font-size: 1.3em;
+}
+
+#bigerror #close {
+    display: inline-block;
+    width: 100px;
+    background-color: #ff2a00;
+    line-height: 50px;
+    cursor: default;
+}
+
+#bigerror #close:hover {
+    background-color: #e04324;
+}
+
+#bigerror .center {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+}
